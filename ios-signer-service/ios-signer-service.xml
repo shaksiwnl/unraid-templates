@@ -13,7 +13,7 @@
 &#xD;
 You must have a reverse proxy to access the webUI. Configuration of the yml can be found on the github. </Overview>
   <Category>Tools:</Category>
-  <WebUI>https://[IP]:[PORT:3344]</WebUI>
+  <WebUI>https://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/SignTools/ios-signer-service/master/img/logo.png</Icon>
   <ExtraParams/>
