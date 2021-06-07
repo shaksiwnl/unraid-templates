@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ios-signer-service</Name>
+  <Repository>signtools/ios-signer-service</Repository>
+  <Registry>https://hub.docker.com/r/signtools/ios-signer-service/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/SignTools/ios-signer-service</Support>
+  <Project>https://github.com/SignTools/ios-signer-service</Project>
+  <Overview>A self-hosted, cross-platform service to sign and install iOS apps, all without a computer.&#xD;
+&#xD;
+You must have a reverse proxy to access the webUI. Configuration of the yml can be found on the github. </Overview>
+  <Category>Tools:</Category>
+  <WebUI>https://[IP]:[PORT:3344]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SignTools/ios-signer-service/master/img/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1623080925</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A self-hosted, cross-platform service to sign and install iOS apps, all without a computer.&#xD;
+&#xD;
+You must have a reverse proxy to access the webUI. Configuration of the yml can be found on the github. </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3344</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ios/config/signer-cfg.yml</HostDir>
+      <ContainerDir>/signer-cfg.yml</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ios/data/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ios/profiles/</HostDir>
+      <ContainerDir>/data/profiles/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>2</Value>
+      <Name>-log-level</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="/signer-cfg.yml" Target="/signer-cfg.yml" Default="" Mode="rw" Description="Container Path: /signer-cfg.yml" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ios/config/signer-cfg.yml</Config>
+  <Config Name="Container Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">3344</Config>
+  <Config Name="/data" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ios/data/</Config>
+  <Config Name="/data/profiles/" Target="/data/profiles/" Default="" Mode="rw" Description="Container Path: /data/profiles/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ios/profiles/</Config>
+  <Config Name="-log-level" Target="-log-level" Default="" Mode="" Description="Container Variable: -log-level" Type="Variable" Display="always" Required="false" Mask="false">2</Config>
+</Container>
