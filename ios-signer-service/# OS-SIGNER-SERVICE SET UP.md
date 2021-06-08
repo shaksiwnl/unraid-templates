@@ -107,13 +107,13 @@ You will need to prepare a signing profile for use with the signing service.
 5. Your admin and wildcard rule should be below these two rules. 
 6. Below is how I have my authelia config set up under access control section. 
 
+```yml
 access_control:
   # Default policy can either be 'bypass', 'one_factor', 'two_factor' or 'deny'.
   # It is the policy applied to any resource if there is no policy to be applied
   # to the user.
   default_policy: deny
-
-```yml
+  
   rules:
     # Rules applied to 'admins' group
     - domain: sign.domain.tld
