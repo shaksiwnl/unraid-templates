@@ -71,7 +71,7 @@ You will need to prepare a signing profile for use with the signing service.
 
 1. Add your device(s) to your dev [portal](https://i.imgur.com/iTaO3xr.png)
 2. IMPORTANT: ADD ALL THE DEVICES TO YOUR PORTAL BEFORE SIGNING WITH AND EXPORTING PROFILE. YOU WILL NEED RECREATE YOUR PROFILE AND RESIGN ANY APPS IF YOU WANT TO ADD MORE DEVICES DOWN THE LINE. 
-3. 
+
 - **Create of Provisioning Profile**
 
 1. Click the [+](https://i.imgur.com/w3YsEtW.png)
