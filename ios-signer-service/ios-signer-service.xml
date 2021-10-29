@@ -3,7 +3,7 @@
   <Name>SignTools</Name>
   <Repository>signtools/signtools</Repository>
   <Registry>https://hub.docker.com/r/signtools/signtools</Registry>
-  <Network>proxy</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -15,7 +15,7 @@ You must have a reverse proxy to access the webUI. Configuration of the yml can 
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/SignTools/ios-signer-service/master/img/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/SignTools/SignTools/master/img/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
