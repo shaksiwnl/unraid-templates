@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://discord.gg/4QnXCGA8yH</Support>
+  <Support>https://github.com/SignTools/SignTools</Support>
   <Project>https://github.com/SignTools/SignTools</Project>
   <Overview>A self-hosted, cross-platform service to sign and install iOS apps, all without a computer.&#xD;
 &#xD;
